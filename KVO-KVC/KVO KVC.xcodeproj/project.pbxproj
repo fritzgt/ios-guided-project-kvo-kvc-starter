@@ -60,8 +60,8 @@
 		89402D93269F813900FA63E3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BD408818225CE28900B9C013 /* ViewController.m */,
 				BD4087FC225CE26300B9C013 /* ViewController.h */,
+				BD408818225CE28900B9C013 /* ViewController.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";

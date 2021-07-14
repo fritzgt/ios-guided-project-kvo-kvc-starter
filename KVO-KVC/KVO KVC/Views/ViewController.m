@@ -35,6 +35,7 @@
     
     LSIDepartment *engineering = [[LSIDepartment alloc] init];
     engineering.name = @"Engineering";
+    
     LSIEmployee *craig = [[LSIEmployee alloc] init];
     craig.name = @"Craig";
     craig.salary = 9000000;
@@ -65,9 +66,21 @@
     [controller addDepartment:marketing];
     self.hrController = controller;
     
-    NSLog(@"%@", self.hrController);
+    //Name of the property is the key
+    NSString *key = @"privateName";
     
+    //Optional - Like casting the object of craig as an id
+    id object = craig;
     
+//    NSString *value = [craig valueForKey:key];
+    NSString *value = [object valueForKey:key];
+    NSLog(@"%@",value);
+    
+//    for(id employee in engineering.employees){
+//        NSString *value = [employee valueForKey:@"name"];
+//        NSLog(@"%@",value);
+//
+//    }
 }
 
 
